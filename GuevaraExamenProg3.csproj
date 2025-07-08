@@ -64,7 +64,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Interfaces\" />
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Services\" />
