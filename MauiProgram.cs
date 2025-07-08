@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using GuevaraExamenProg3.Interfaces;
+using GuevaraExamenProg3.Services;
+using GuevaraExamenProg3.ViewModels;
+using Microsoft.Extensions.Logging;
 
 namespace GuevaraExamenProg3
 {
@@ -14,6 +17,9 @@ namespace GuevaraExamenProg3
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<IRecetaService, RecetaService>();
+            builder.Services.AddSingleton<RecetaViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
