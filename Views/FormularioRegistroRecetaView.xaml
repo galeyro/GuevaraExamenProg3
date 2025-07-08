@@ -41,7 +41,7 @@
 
         <Label
             x:Name="Lbl_Mensaje"
-            Text="{Binding mensaje}"/>
+            Text="{Binding mensajeRespuesta}"/>
 
     </VerticalStackLayout>
 </ContentPage>
