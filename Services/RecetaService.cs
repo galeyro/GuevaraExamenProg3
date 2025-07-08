@@ -47,6 +47,8 @@ namespace GuevaraExamenProg3.Services
         //guardar recetas async
         public async Task<bool> GuardarRecetaAsync(Receta receta)
         {
+            await InitAsync();
+
             //regla
             if (receta.TiempoPreparacionMinutos>180 && !receta.EsVegetariana)
             {
