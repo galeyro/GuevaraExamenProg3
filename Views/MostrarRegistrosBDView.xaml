@@ -10,17 +10,16 @@
             Command="{Binding GetRecetasCommand}"
             />
 
-
             <StackLayout BindableLayout.ItemsSource="{Binding Recetas}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <Frame 
-                       BorderColor="Gray" 
-                       CornerRadius="10">
+                            BorderColor="Aqua" 
+                            CornerRadius="10">
                             <VerticalStackLayout>
-                                <Label Text="{Binding Nombre}" 
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold"  
                                  />
-                                <Label Text="{Binding Ingredientes}" 
+                                <Label Text="{Binding Ingredientes}" FontAttributes="Italic" 
                                  />
                                 <Label Text="{Binding TiempoPreparacionMinutos, StringFormat='Tiempo: {0} minutos'}" 
                                  />

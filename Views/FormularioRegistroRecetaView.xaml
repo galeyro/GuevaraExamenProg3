@@ -35,6 +35,10 @@
             x:Name="CheckBox_EsVegetariana"
             IsChecked="{Binding esVegetariana}"/>
 
+        <Button 
+            Text="Guardar Receta"
+            Command="{Binding GuardarRecetaCommand}"/>
+
         <Label
             x:Name="Lbl_Mensaje"
             Text="{Binding mensaje}"/>
