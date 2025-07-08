@@ -4,9 +4,40 @@
              x:Class="GuevaraExamenProg3.Views.FormularioRegistroRecetaView"
              Title="FormularioRegistroRecetaView">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            x:Name="Lbl_Nombre"
+            Text="Nombre"/>
+        <Entry 
+            x:Name="Entry_Nombre"
+            Placeholder="Ingrese nombre de receta"
+            Text="{Binding nombre}"/>
+        
+        <Label
+            x:Name="Lbl_Ingredientes"
+            Text="Ingredientes"/>
+        <Entry 
+            x:Name="Entry_Ingredientes"
+            Placeholder="Ingrese ingredientes"
+            Text="{Binding ingredientes}"/>
+        
+        <Label
+            x:Name="Lbl_TiempoPreparacionMinutos"
+            Text="Tiempo de preparacion (minutos)"/>
+        <Entry 
+            x:Name="Entry_TiempoPreparacionMinutos"
+            Placeholder="Ingrese el tiempo de preparacion en minutos"
+            Text="{Binding tiempoPreparacionMinutos}"/>
+        
+        <Label
+            x:Name="Lbl_EsVegetariana"
+            Text="¿Es Receta Vegetariana?"/>
+        <CheckBox 
+            x:Name="CheckBox_EsVegetariana"
+            IsChecked="{Binding esVegetariana}"/>
+
+        <Label
+            x:Name="Lbl_Mensaje"
+            Text="{Binding mensaje}"/>
+
     </VerticalStackLayout>
 </ContentPage>
